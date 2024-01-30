@@ -8,15 +8,17 @@
     "start": "nodemon ./api/index.js"
   },
   "keywords": [],
-  "author": "Raphael Lucas Girao de Lima",
+  "author": "Matheus Moulin",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.1",
     "express": "^4.18.2",
     "path": "^0.12.7",
     "pg": "^8.8.0",
     "sequelize": "^6.26.0",
     "sequelize-cli": "^6.5.2",
+    "sqlite3": "^5.1.7",
     "uuid": "^9.0.0"
   },
   "devDependencies": {
