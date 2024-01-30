@@ -29,12 +29,12 @@ class UsuarioService {
   }
 
   async buscarTodosUsuarios() {
-    const usuarios = await database.usuarios.findAll();
+    const usuarios = await db.usuarios.findAll();
     return usuarios;
   }
-  
+
   async buscarUsuarioPorId(id) {
-    const usuario = await database.usuarios.findOne({
+    const usuario = await db.usuarios.findOne({
       where: {
         id: id,
       },
@@ -60,7 +60,7 @@ class UsuarioService {
   async deletarUsuario(id) {
     await this.buscarUsuarioPorId(id);
     try {
-      await database.usuarios.destroy({
+      await db.usuarios.destroy({
         where: {
           id: id,
         },
