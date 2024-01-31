@@ -4,7 +4,8 @@ const produto = require('./produtoRoute');
 const usuario = require('./usuariosRoute');
 const auth = require('./authRoutes');
 const role = require('./roleRoutes');
+const permissao = require('./permissaoRoute');
 
 module.exports = (app) => {
-  app.use(bodyParser.json(), auth, usuario, produto, role);
+  app.use(bodyParser.json(), auth, usuario, produto, role, permissao);
 };
